@@ -18,7 +18,11 @@ export const metadata: Metadata = {
   description: "Play polyphonic chords with hand gestures via Webcam using MediaPipe Hands and Tone.js Web Audio API.",
 };
 
-export default function RootLayout({ children }: LayoutProps<"/">) {
+export default function RootLayout({
+  children,
+}: Readonly<{
+  children: React.ReactNode;
+}>) {
   return (
     <html
       lang="en"
